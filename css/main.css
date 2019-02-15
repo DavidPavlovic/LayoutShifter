@@ -1,0 +1,52 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	width: 100%;
+	min-height: 100px;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dark-blue {
+	background: #1a3569;
+}
+
+.light-blue {
+	background: #0293cf;
+}
+
+.green {
+	background: #037933;
+}
+
+.red {
+	background: red;
+}
+
+@media screen and (min-width: 500px) {
+	.dark-blue, .container-two {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.dark-blue, .red {
+		width: 25%;
+	}
+	.container-two {
+		width: 50%;
+	}
+	.dark-blue {
+		order: 1;
+	}
+	.red {
+		order: -1;
+	}
+}
